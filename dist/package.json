@@ -1,0 +1,19 @@
+{
+  "name": "regexper",
+  "version": "1.0.0",
+  "description": "Regular expression visualization tool",
+  "homepage": "http://regexper.com",
+  "main": "lib/regexper.js",
+  "types": "regexper.d.ts",
+  "author": [
+    {
+      "name": "Mora",
+      "email": "qiuzhongleiabc@126.com"
+    },
+    {
+      "name": "Jeffrey Avallone",
+      "email": "jeff.avallone@gmail.com"
+    }
+  ],
+  "license": "MIT"
+}

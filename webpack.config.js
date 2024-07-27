@@ -67,12 +67,11 @@ module.exports = {
         loader: require.resolve('./lib/canopy-loader')
       },
       {
-        test: /\.scss$/,
+        test: /\.css$/,
         exclude: /node_modules/,
         loaders: [
           MiniCssExtractPlugin.loader,
-          'css-loader',
-          'sass-loader'
+          'css-loader'
         ]
       },
       {

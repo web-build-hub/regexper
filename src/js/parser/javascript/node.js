@@ -120,7 +120,6 @@ export default class Node {
         .addClass('label'),
       rect = group.rect(),
       label = group.text(0, 0, _.flatten([text]));
-
     return this.deferredStep()
       .then(() => {
         let box = label.getBBox(),

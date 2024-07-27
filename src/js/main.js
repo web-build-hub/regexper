@@ -5,7 +5,7 @@
 // test. Therefore, this code is kept as simple as possible to reduce the need
 // to run it through automated tests.
 
-import '../sass/main.scss';
+import '../sass/main.css';
 
 import util from './util.js';
 import Regexper from './regexper.js';

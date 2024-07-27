@@ -6,7 +6,8 @@ export default {
 
   // Renders the literal into the currently set container.
   _render() {
-    return this.renderLabel(['\u201c', this.literal, '\u201d'])
+    // return this.renderLabel(['\u201c', this.literal, '\u201d'])
+    return this.renderLabel(['"', this.literal, '"'])
       .then(label => {
         let spans = label.selectAll('tspan');
 
