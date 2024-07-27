@@ -1,22 +1,20 @@
 {
   "name": "regexper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Regular expression visualization tool",
   "homepage": "http://regexper.com",
   "repository": {
-    "url": "https://github.com/web-build-hub/regexper"
+    "url": "git+ssh://git@github.com/web-build-hub/regexper.git"
   },
   "main": "lib/regexper.js",
   "types": "regexper.d.ts",
-  "author": [
-    {
-      "name": "Mora",
-      "email": "qiuzhongleiabc@126.com"
-    },
-    {
-      "name": "Jeffrey Avallone",
-      "email": "jeff.avallone@gmail.com"
-    }
-  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "author": {
+    "name": "Mora",
+    "email": "qiuzhongleiabc@126.com"
+  },
   "license": "MIT"
 }

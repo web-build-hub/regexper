@@ -1,9 +1,8 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
 module.exports = {
-  mode: 'production',
+  mode: process.env.npm_lifecycle_script?.includes('webpack -w') ? 'development' : 'production',
   devtool: 'source-map',
   entry: './src/js/lib.js',
   output: {

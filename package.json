@@ -15,6 +15,7 @@
     "test": "karma start --single-run",
     "build": "webpack",
     "lib": "webpack --config ./webpack.lib.config.js",
+    "dev": "webpack -w --config ./webpack.lib.config.js",
     "start": "webpack-dev-server"
   },
   "devDependencies": {

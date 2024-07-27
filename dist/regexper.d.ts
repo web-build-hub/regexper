@@ -14,11 +14,13 @@ declare class Parser {
   /**
    * Parse the regular expression to generate a renderable object.
    * @param expression The string representation of the regular expression.
-   * @returns A render object that can be used to generate an svg.
    */
-  parse(expression: string): Promise<{
-      render: () => any;
-  }>;
+  parse(expression: string): Promise<Parser>;
+
+  /**
+   * Render the parsed expression to an SVG
+   */
+  render(): Promise<any>
 }
 /**
 * Visualize the regular expression and generate an SVG to be rendered in `svgContainer`.
@@ -32,3 +34,4 @@ declare const _default: {
   render: typeof render;
 };
 export default _default;
+

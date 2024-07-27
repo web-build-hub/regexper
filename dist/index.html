@@ -8,7 +8,9 @@
   <body>
     <div id="container"></div>
     <script>
-      RegExper.render('/^[abc]*/', document.querySelector('#container'))
+      let promise = RegExper.render('/^[abc]*/', document.querySelector('#container'))
+      promise.cancel()
+      RegExper.render('/^[ab]*/', document.querySelector('#container'))
     </script>
 </body>
 </html>

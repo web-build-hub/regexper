@@ -10,8 +10,8 @@ function render(expression, divContainer) {
   if (!document.getElementById('svg-container-base')) {
     init();
   }
-  return new Promise((resolve, reject) => {
-    const runner = new Parser(divContainer);
+  const runner = new Parser(divContainer);
+  const promise = new Promise((resolve, reject) => {
     let parseError = '';
     let renderError = '';
     runner.parse(expression)
@@ -34,6 +34,8 @@ function render(expression, divContainer) {
         }
       });
   });
+  Object.assign(promise, { cancel: () => runner.cancel() });
+  return promise;
 }
 
 function init() {
