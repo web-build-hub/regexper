@@ -18,6 +18,11 @@ declare class Parser {
   parse(expression: string): Promise<Parser>;
 
   /**
+   * Cancel render
+   */
+  cancel(): void;
+
+  /**
    * Render the parsed expression to an SVG
    */
   render(): Promise<any>
