@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Regular expression visualization tool",
   "homepage": "http://regexper.com",
+  "repository": {
+    "url": "https://github.com/web-build-hub/regexper"
+  },
   "main": "lib/regexper.js",
   "types": "regexper.d.ts",
   "author": [
