@@ -1,3 +1,5 @@
+注意：使用 node 16 版本运行或编译
+
 **Fork from https://gitlab.com/javallone/regexper-static.**
 
 # Regexper
