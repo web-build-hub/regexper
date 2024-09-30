@@ -1,5 +1,10 @@
 注意：使用 node 16 版本运行或编译
 
+## 开发 `npm run start`
+## 打包 `npm run lib`
+
+
+
 **Fork from https://gitlab.com/javallone/regexper-static.**
 
 # Regexper

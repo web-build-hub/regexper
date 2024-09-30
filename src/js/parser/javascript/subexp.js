@@ -13,7 +13,6 @@ export default {
       get: function() {
         var anchor = this.regexp.getBBox(),
           matrix = this.transform().localMatrix;
-
         return {
           ax: matrix.x(anchor.ax, anchor.ay),
           ax2: matrix.x(anchor.ax2, anchor.ay),
@@ -49,7 +48,15 @@ export default {
     if (_.has(this.labelMap, this.properties.capture.textValue)) {
       return this.labelMap[this.properties.capture.textValue];
     } else {
-      return `group #${this.state.groupCounter++}`;
+      let group = this.state.groupCounter++;
+      try {
+        if (/\?<(.*)>/.test(this.properties.capture.textValue)) {
+          group = RegExp.$1;
+        }
+      } catch (e) {
+        // noop
+      }
+      return `group #${group}`;
     }
   },
 
